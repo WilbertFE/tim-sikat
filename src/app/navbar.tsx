@@ -64,7 +64,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed left-0 right-0 top-0 px-4 py-2 shadow-sm z-10 bg-white">
+      <nav className="fixed left-0 right-0 top-0 px-4 py-2 shadow-md lg:shadow-sm z-10 bg-white">
         <ul className="hidden lg:flex lg:justify-around lg:p-4">
           {navbarContent.map((content, i) => (
             <li key={i}>
@@ -94,7 +94,7 @@ export default function Navbar() {
               onClick={() => setIsOpen(true)}
             />
           )}
-          <h1 className="text-xl font-bold w-full text-center">SIKAT</h1>
+          <h1 className="text-xl font-bold flex-1 text-center -ml-4">SIKAT</h1>
         </div>
       </nav>
       {isOpen && (
