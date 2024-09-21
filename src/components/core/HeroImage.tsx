@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroImage() {
   return (
-    <div className="flex justify-center mt-32 -z-50">
+    <div className="flex justify-center mt-12 -z-50">
       <Image
         priority
         alt="Wilbert dan Jacob"
