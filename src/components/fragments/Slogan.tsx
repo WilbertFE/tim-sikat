@@ -11,7 +11,7 @@ const words = [
 
 export default function Slogan() {
   return (
-    <div className="flex flex-col items-center mt-6">
+    <div className="flex flex-col items-center mt-0">
       <h1 className="font-bold text-3xl">Paslon Tiga itu</h1>
       <FlipWords
         duration={2000}

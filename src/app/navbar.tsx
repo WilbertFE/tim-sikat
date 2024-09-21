@@ -6,6 +6,7 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
 import { CircleChevronDown, Menu, X } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 
 const navbarContent = [
@@ -64,7 +65,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed left-0 right-0 top-0 px-4 py-2 shadow-md lg:shadow-sm z-50 bg-white">
+      <nav className="fixed left-0 right-0 top-0 px-4 py-1 shadow-md lg:shadow-sm z-50 bg-white">
         <ul className="hidden lg:flex lg:justify-around lg:p-4">
           {navbarContent.map((content, i) => (
             <li key={i}>
@@ -80,7 +81,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <div className="lg:hidden flex items-center p-4">
+        <div className="lg:hidden relative flex items-center p-4">
           {(isOpen && (
             <X
               size={32}
@@ -94,7 +95,13 @@ export default function Navbar() {
               onClick={() => setIsOpen(true)}
             />
           )}
-          <h1 className="text-xl font-bold flex-1 text-center -ml-4">SIKAT</h1>
+          <Image
+            src="/img/logo.png"
+            alt="Logo"
+            width={128}
+            height={128}
+            className="absolute right-1/2 translate-x-1/2 -bottom-5"
+          />
         </div>
       </nav>
       {isOpen && (
