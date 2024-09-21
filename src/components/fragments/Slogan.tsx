@@ -16,7 +16,7 @@ export default function Slogan() {
       <FlipWords
         duration={2000}
         words={words}
-        className="text-2xl font-bold text-cyan-600 tracking-wider -z-10"
+        className="text-2xl font-bold text-cyan-600 tracking-wider -z-10 text-center"
       />
       <ArrowDown
         color="#ffffff"
