@@ -3,6 +3,9 @@ import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import EkskulImage from "/public/img/ekskul.png";
+import DigitalProductImage from "/public/img/produk-digital.png";
+import CommunicationImage from "/public/img/sarana-komunikasi.png";
 
 export default function ExpandableCardDemo() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
@@ -139,8 +142,8 @@ export default function ExpandableCardDemo() {
             <div className="flex gap-4 flex-col  w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <Image
-                  width={100}
-                  height={100}
+                  width={200}
+                  height={200}
                   src={card.src}
                   alt={card.title}
                   className="h-60 w-full  rounded-lg object-cover object-top"
@@ -157,7 +160,9 @@ export default function ExpandableCardDemo() {
                   layoutId={`description-${card.description}-${id}`}
                   className="text-neutral-600 dark:text-neutral-400 text-center md:text-left text-base"
                 >
-                  {card.description}
+                  <button className="mt-2 shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(0,118,255,0.9)] px-8 py-2 bg-[#0070f3] rounded-md text-white font-light transition duration-200 ease-linear">
+                    Detail
+                  </button>
                 </motion.p>
               </div>
             </div>
@@ -203,91 +208,66 @@ export const CloseIcon = () => {
 
 const cards = [
   {
-    description: "Lana Del Rey",
-    title: "Summertime Sadness",
-    src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
-    ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    description: "Ekskul Akademik Maupun Non-Akademik",
+    title: "Pengembangan Ekskul",
+    src: EkskulImage,
+    ctaText: "Dukung",
+    ctaLink: "https://tri-sakti.vercel.app",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          Kami akan mengembangkan ekskul baik akademik maupun non-akademik.
+          Misalnya, kami akan membantu mengenai masalah sarana dan prasaran dari
+          ekskul. Peralatan, tempat, sampai kegiatannya.
+          <br />
+          <br />
+          Untuk Pembentukan Ekskul, terdapat syarat yang harus di pertimbangkan
+          yaitu <strong>peminatnya</strong> dan kemudahan akses{" "}
+          <strong>sarana dan prasarananya</strong>
         </p>
       );
     },
   },
   {
-    description: "Babbu Maan",
-    title: "Mitran Di Chhatri",
-    src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
-    ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    description: "Website OSIS",
+    title: "Pembuatan Produk Digital",
+    src: DigitalProductImage,
+    ctaText: "Dukung",
+    ctaLink: "https://tri-sakti.vercel.app",
     content: () => {
       return (
         <p>
-          Babu Maan, a legendary Punjabi singer, is renowned for his soulful
-          voice and profound lyrics that resonate deeply with his audience. Born
-          in the village of Khant Maanpur in Punjab, India, he has become a
-          cultural icon in the Punjabi music industry. <br /> <br /> His songs
-          often reflect the struggles and triumphs of everyday life, capturing
-          the essence of Punjabi culture and traditions. With a career spanning
-          over two decades, Babu Maan has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
+          Program unik yang menjadi identitas Paslon 03 adalah Teknologi. Dengan
+          pengalaman bertahun-tahun dalam dunia teknologi, kami ingin membuat
+          suatu produk digital yang bisa dipakai oleh semua siswa-siswi
+          Methonam. Bahkan kami ingin produk kami bisa menjangkau lebih dari
+          sekolah.
+          <br /> <br />
+          Untuk produk digital yang kami rencanakan sekarang adalah website
+          OSIS, yang akan digunakan untuk sarana komunikasi yang transparan
+          antara siswa dan pihak sekolah. Digunakan untuk menyampaikan aspirasi
+          terkait apapun, terutama masalah bullying.
         </p>
       );
     },
   },
 
   {
-    description: "Metallica",
-    title: "For Whom The Bell Tolls",
-    src: "https://assets.aceternity.com/demos/metallica.jpeg",
-    ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    description: "Melalui Website OSIS",
+    title: "Menjadi Sarana Komunikasi yang Transparan",
+    src: CommunicationImage,
+    ctaText: "Dukung",
+    ctaLink: "https://tri-sakti.vercel.app",
     content: () => {
       return (
         <p>
-          Metallica, an iconic American heavy metal band, is renowned for their
-          powerful sound and intense performances that resonate deeply with
-          their audience. Formed in Los Angeles, California, they have become a
-          cultural icon in the heavy metal music industry. <br /> <br /> Their
-          songs often reflect themes of aggression, social issues, and personal
-          struggles, capturing the essence of the heavy metal genre. With a
-          career spanning over four decades, Metallica has released numerous hit
-          albums and singles that have garnered them a massive fan following
-          both in the United States and abroad.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Lord Himesh",
-    title: "Aap Ka Suroor",
-    src: "https://assets.aceternity.com/demos/aap-ka-suroor.jpeg",
-    ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          Himesh Reshammiya, a renowned Indian music composer, singer, and
-          actor, is celebrated for his distinctive voice and innovative
-          compositions. Born in Mumbai, India, he has become a prominent figure
-          in the Bollywood music industry. <br /> <br /> His songs often feature
-          a blend of contemporary and traditional Indian music, capturing the
-          essence of modern Bollywood soundtracks. With a career spanning over
-          two decades, Himesh Reshammiya has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
+          Kami akan menggunakan produk digital kami untuk kebutuhan komunikasi
+          antara siswa dan pihak sekolah. Siswa bisa menyampaikan aspirasinya
+          kepada kami dan akan kami teruskan ke pihak sekolah.
+          <br /> <br />
+          Dengan adanya program ini, siswa tidak perlu takut dan bingung melapor
+          kemana terkait masalah-masalah di lingkungan sekolah. Kami yakin, kami
+          dapat melaksanakan program ini, dengan pengalaman kami.
         </p>
       );
     },
