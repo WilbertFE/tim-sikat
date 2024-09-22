@@ -50,7 +50,7 @@ export default function LayoutPrestasi() {
               i === 0 ? "bg-teal-500" : "bg-green-500"
             }`}
           >
-            <CardHeader className="text-center relative flex flex-col items-center justify-center px-4">
+            <CardHeader className="text-center flex flex-col items-center justify-center px-4">
               <CardTitle className="font-bold text-3xl text-white">
                 {paslon.jabatan}
               </CardTitle>

@@ -12,7 +12,7 @@ export default function VisiMisi() {
           <span className="tracking-wide bg-gradient-to-r from-teal-500 to-green-600 bg-clip-text text-transparent">
             SIKAT
           </span>{" "}
-          Pada Sekolah
+          Pada Sekolah. <strong>Tekan</strong> Untuk Melihat Detailnya.
         </p>
       </div>
       <div className="w-full">
