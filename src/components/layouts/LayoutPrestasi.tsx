@@ -12,6 +12,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
 import GambarWilbert from "/public/img/wilbert.png";
 import GambarJacob from "/public/img/jacob.png";
+import Link from "next/link";
 
 const paslonTiga = [
   {
@@ -25,6 +26,7 @@ const paslonTiga = [
       "Sekarang Menjabat Sebagai Ketua Ekskul Komputer (Mikroskil)",
       "Memiliki Satu Tahun Pengalaman Dalam Bidang Komputer dan Programming",
     ],
+    ref: "/tim-sikat",
   },
   {
     nama: "Jacob Martua Haganta Simorangkir",
@@ -37,6 +39,7 @@ const paslonTiga = [
       "Memperoleh Juara 1 dalam OSN-K Deli Serdang",
       "Memperoleh medali Perak dalam POSI",
     ],
+    ref: "/tim-sikat",
   },
 ];
 
@@ -44,7 +47,11 @@ export default function LayoutPrestasi() {
   return (
     <div className="flex flex-col gap-y-12">
       {paslonTiga.map((paslon, i) => (
-        <div key={i} className="flex flex-col">
+        <div
+          id={i === 0 ? "wilbert" : "jacob"}
+          key={i}
+          className="flex flex-col"
+        >
           <Card
             className={`mx-1 rounded-xl overflow-hidden relative ${
               i === 0 ? "bg-teal-500" : "bg-green-500"
@@ -111,15 +118,17 @@ export default function LayoutPrestasi() {
               ))}
             </div>
           </div>
-          <button
-            className={`${
-              i === 0
-                ? "bg-teal-500 hover:border-teal-500"
-                : "bg-green-500 hover:border-green-500"
-            } px-8 py-2 mx-4 mt-4 rounded-md text-white font-bold transition duration-200 hover:bg-white hover:text-black border-2 border-transparent`}
-          >
-            Lebih Kenali {paslon.nama.split(" ")[0]}
-          </button>
+          <Link className="flex justify-center" href={paslon.ref}>
+            <button
+              className={`${
+                i === 0
+                  ? "bg-teal-500 hover:border-teal-500"
+                  : "bg-green-500 hover:border-green-500"
+              } px-8 w-full py-2 mx-4 mt-4 rounded-md text-white font-bold transition duration-200 hover:bg-white hover:text-black border-2 border-transparent`}
+            >
+              Lebih Kenali {paslon.nama.split(" ")[0]}
+            </button>
+          </Link>
         </div>
       ))}
     </div>

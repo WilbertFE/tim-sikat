@@ -4,40 +4,47 @@ import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import Logo from "/public/img/logo.png";
+import Link from "next/link";
 
 const sosialMedia = [
   {
     name: "Wilbert Bernardi",
     src: "/img/wilbert.png",
-    linkIg: "/",
-    linkWa: "/",
+    linkIg: "https://www.instagram.com/wilbertbernardi_fe/",
+    linkWa: "https://wa.me/6281276103939",
   },
   {
     name: "Jacob Martua Haganta Simorangkir",
     src: "/img/jacob.png",
-    linkIg: "/",
-    linkWa: "/",
+    linkIg: "https://www.instagram.com/jacob_simorangkir/",
+    linkWa: "https://wa.me/6282268168588",
   },
 ];
 
 const hamburgerContent = [
   {
     title: "Kenali Wilbert",
+    ref: "/#wilbert",
   },
   {
     title: "Kenali Jacob",
+    ref: "/#jacob",
   },
   {
     title: "Visi & Misi",
+    ref: "/#visi-misi",
   },
   {
     title: "Program Unggulan",
+    ref: "/#program-unggulan",
   },
   {
     title: "TIM SIKAT",
+    ref: "/tim-sikat",
   },
   {
     title: "Dukung SIKAT",
+    ref: "/#footer",
   },
 ];
 
@@ -74,7 +81,10 @@ const programUnggulan = [
 
 export default function Footer() {
   return (
-    <div className="flex flex-col gap-y-6 mt-32 p-4 min-h-96 bg-slate-200 rounded-t-3xl">
+    <div
+      id="footer"
+      className="flex flex-col gap-y-6 mt-32 p-4 min-h-96 bg-slate-200 rounded-t-3xl"
+    >
       <div className="flex flex-col gap-y-6">
         {sosialMedia.map((info, i) => (
           <div key={i} className="flex">
@@ -94,8 +104,12 @@ export default function Footer() {
                 {info.name}
               </h1>
               <div className="flex gap-x-2 mt-1">
-                <FaInstagram size={24} className="cursor-pointer" />
-                <FaWhatsapp size={24} className="cursor-pointer" />
+                <Link href={info.linkIg}>
+                  <FaInstagram size={24} className="cursor-pointer" />
+                </Link>
+                <Link href={info.linkWa}>
+                  <FaWhatsapp size={24} className="cursor-pointer" />
+                </Link>
               </div>
             </div>
           </div>
@@ -105,29 +119,27 @@ export default function Footer() {
       <div className="flex flex-col gap-y-4">
         <p className="text-muted-foreground text-xl">Dukung SIKAT</p>
         {hamburgerContent.map((content, i) => (
-          <div key={i} className="flex">
-            <h1>{content.title}</h1>
-          </div>
+          <Link href={content.ref} key={i}>
+            {content.title}
+          </Link>
         ))}
       </div>
       <Separator className="bg-slate-400" />
       <div className="flex flex-col gap-y-4">
-        <p className="text-muted-foreground text-xl">Visi & Misi</p>
+        <p className="text-muted-foreground text-xl">Visi & Misi - SIKAT</p>
         {misi.map((content, i) => (
-          <div key={i} className="flex">
-            <h1>{content.title}</h1>
-          </div>
+          <Link href={"/#visi-misi"} key={i}>
+            {content.title}
+          </Link>
         ))}
       </div>
       <Separator className="bg-slate-400" />
       <div className="flex flex-col gap-y-4">
         <p className="text-muted-foreground text-xl">Program Unggulan</p>
         {programUnggulan.map((content, i) => (
-          <div key={i} className="flex">
-            <h1>
-              Program {i + 1} - {content.title}
-            </h1>
-          </div>
+          <Link href="/#program-unggulan" key={i}>
+            Program {i + 1} - {content.title}
+          </Link>
         ))}
       </div>
       <Separator className="bg-slate-400" />
