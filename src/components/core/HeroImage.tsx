@@ -1,4 +1,5 @@
 import Image from "next/image";
+import GambarUtama from "/public/img/hero.jpeg";
 
 export default function HeroImage() {
   return (
@@ -6,7 +7,7 @@ export default function HeroImage() {
       <Image
         priority
         alt="Wilbert dan Jacob"
-        src="/img/hero.jpeg"
+        src={GambarUtama}
         width={500}
         height={500}
       />

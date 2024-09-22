@@ -8,6 +8,7 @@ import {
 import { CircleChevronDown, Menu, X } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
+import LogoSikat from "/public/img/logo.png";
 
 const navbarContent = [
   {
@@ -96,7 +97,7 @@ export default function Navbar() {
             />
           )}
           <Image
-            src="/img/logo.png"
+            src={LogoSikat}
             alt="Logo"
             width={128}
             height={128}
