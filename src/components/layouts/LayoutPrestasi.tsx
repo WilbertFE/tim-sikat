@@ -8,7 +8,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { CircleChevronDown } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
@@ -45,50 +44,39 @@ export default function LayoutPrestasi() {
     <div className="flex flex-col gap-y-12">
       {paslonTiga.map((paslon, i) => (
         <div key={i} className="flex flex-col">
-          <Card className="mx-1 rounded-xl overflow-hidden p-0">
+          <Card className="mx-1 rounded-xl overflow-hidden">
             <AuroraBackground
               className={`relative w-full h-full ${
-                i === 0 ? "bg-teal-600" : "bg-green-600"
+                i === 0 ? "bg-teal-500" : "bg-green-600"
               }`}
             >
-              <motion.div
-                initial={{ opacity: 0.0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  delay: 0.3,
-                  duration: 0.8,
-                  ease: "easeInOut",
-                }}
-                className="relative flex flex-col gap-4 items-center justify-center px-4"
-              >
-                <CardHeader className="text-center">
-                  <CardTitle className="font-bold text-3xl text-white">
-                    {paslon.jabatan}
-                  </CardTitle>
-                  <CardDescription className="text-slate-200 text-xl">
-                    {paslon.nama}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="flex justify-center py-0">
-                  <Image
-                    src={`${i === 0 ? "/img/wilbert.png" : "/img/jacob.png"}`}
-                    alt={paslon.nama}
-                    width={400}
-                    height={400}
-                    className="-mt-32"
-                  />
-                </CardContent>
-                <CardFooter className="absolute bottom-0 flex flex-col">
-                  <blockquote className="text-center text-white font-medium tracking-wide">
-                    &quot;{paslon.pesan}&quot;
-                  </blockquote>
-                  <CircleChevronDown
-                    color="#ffffff"
-                    size={32}
-                    className="mt-3 animate-bounce"
-                  />
-                </CardFooter>
-              </motion.div>
+              <CardHeader className="text-center relative flex flex-col items-center justify-center px-4">
+                <CardTitle className="font-bold text-3xl text-white">
+                  {paslon.jabatan}
+                </CardTitle>
+                <CardDescription className="text-slate-200 text-xl">
+                  {paslon.nama}
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="flex justify-center py-0 z-10">
+                <Image
+                  src={`${i === 0 ? "/img/wilbert.png" : "/img/jacob.png"}`}
+                  alt={paslon.nama}
+                  width={400}
+                  height={400}
+                  className="-mt-32"
+                />
+              </CardContent>
+              <CardFooter className="absolute bottom-0 flex z-20 flex-col">
+                <blockquote className="text-center text-white font-medium tracking-wide">
+                  &quot;{paslon.pesan}&quot;
+                </blockquote>
+                <CircleChevronDown
+                  color="#ffffff"
+                  size={32}
+                  className="mt-3 animate-bounce"
+                />
+              </CardFooter>
             </AuroraBackground>
           </Card>
           <div className="px-4 flex-col flex mt-4">

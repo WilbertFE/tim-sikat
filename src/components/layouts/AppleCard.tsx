@@ -18,7 +18,7 @@ export default function AppleCard() {
 const DummyContent = () => {
   return (
     <>
-      {[...new Array(3).fill(1)].map((_, index) => {
+      {[...new Array(1).fill(1)].map((_, index) => {
         return (
           <div
             key={"dummy-content" + index}
@@ -51,13 +51,13 @@ const data = [
   {
     category: "Misi 01 - Solidaritas",
     title: "Menjaga Solidaritas",
-    src: "/img/solidaritas.jpg",
-    content: <DummyContent />,
+    src: "/img/solidaritas.png",
+    content: <DummyContent title={this?.title} />,
   },
   {
     category: "Misi 02 - Integritas",
     title: "Menjaga Integritas",
-    src: "/img/integritas.jpg",
+    src: "/img/integritas.png",
     content: <DummyContent />,
   },
   {
@@ -70,13 +70,13 @@ const data = [
   {
     category: "Misi 04 - Akhlak",
     title: "Meningkatkan Kreatifitas",
-    src: "/img/kreatifitas.png",
+    src: "/img/akhlak.png",
     content: <DummyContent />,
   },
   {
     category: "Misi 05 - Teknologi",
     title: "Mengintegrasikan Teknologi",
-    src: "/img/kreatifitas.png",
+    src: "/img/teknologi.png",
     content: <DummyContent />,
   },
 ];
