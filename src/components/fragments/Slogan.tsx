@@ -1,22 +1,38 @@
-import { FlipWords } from "../ui/flip-words";
 import { ArrowDown } from "lucide-react";
+import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 
 const words = [
-  "Mengutamakan Rasa Adil",
-  "Komunikasinya Transparan",
-  "Ekskulnya Maksimal",
-  "Siswanya Berakhlak Mulia",
-  "Teknologi Diaplikasikan",
+  {
+    text: "Solidartias,",
+  },
+  {
+    text: "Integritas,",
+  },
+  {
+    text: "Kreatifitas,",
+  },
+  {
+    text: "Akhlak",
+  },
+  {
+    text: "Teknologi",
+  },
 ];
 
 export default function Slogan() {
   return (
     <div className="flex flex-col items-center mt-0">
-      <h1 className="font-bold text-3xl">Paslon Tiga itu</h1>
-      <FlipWords
-        duration={2000}
+      <h1 className="font-bold text-3xl">
+        Visi{" "}
+        <span className="tracking-wide bg-gradient-to-r from-teal-500 to-green-600 bg-clip-text text-transparent">
+          SIKAT
+        </span>{" "}
+        Itu
+      </h1>
+      <TypewriterEffect
+        className="text-lg"
         words={words}
-        className="text-2xl font-bold text-cyan-600 tracking-wider -z-10 text-center"
+        cursorClassName="bg-gradient-to-r from-teal-500 to-green-600"
       />
       <ArrowDown
         color="#ffffff"

@@ -100,7 +100,7 @@ export default function Navbar() {
             alt="Logo"
             width={128}
             height={128}
-            className="absolute right-1/2 translate-x-1/2 -bottom-5"
+            className="absolute right-1/2 translate-x-1/2"
           />
         </div>
       </nav>
