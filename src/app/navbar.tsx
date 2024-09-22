@@ -66,7 +66,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed left-0 right-0 top-0 px-4 py-1 shadow-md lg:shadow-sm z-[1000] bg-white">
+      <nav className="fixed left-0 right-0 top-0 px-4 py-1 shadow-md lg:shadow-sm z-[60] bg-white">
         <ul className="hidden lg:flex lg:justify-around lg:p-4">
           {navbarContent.map((content, i) => (
             <li key={i}>
@@ -106,7 +106,7 @@ export default function Navbar() {
         </div>
       </nav>
       {isOpen && (
-        <ul className="fixed pt-20 lg:hidden bg-slate-50 px-4 flex flex-col justify-around min-h-screen left-0 right-0 top-0 bottom-0 z-[999]">
+        <ul className="fixed pt-20 lg:hidden bg-slate-50 px-4 flex flex-col justify-around min-h-screen left-0 right-0 top-0 bottom-0 z-50">
           {hamburgerContent.map((content, i) => (
             <li
               className="text-xl p-2 font-medium flex items-center gap-x-1 tracking-wide"
