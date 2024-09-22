@@ -41,23 +41,16 @@ const hamburgerContent = [
     title: "Kenali Jacob",
   },
   {
-    title: "Program Kerja",
+    title: "Visi & Misi",
   },
   {
-    title: "Dukung SIKAT",
+    title: "Program Unggulan",
   },
   {
     title: "TIM SIKAT",
   },
-
   {
-    title: "Kawal SIKAT",
-  },
-  {
-    title: "SIKAT-kan Instagram",
-  },
-  {
-    title: "SIKAT-kan Whatsapp",
+    title: "Dukung SIKAT",
   },
 ];
 

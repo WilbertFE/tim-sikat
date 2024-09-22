@@ -2,7 +2,12 @@
 
 import { HeroImage } from "@/components/core";
 import { Slogan } from "@/components/fragments";
-import { LayoutPrestasi, VisiMisi, ProgramKerja } from "@/components/layouts";
+import {
+  LayoutPrestasi,
+  VisiMisi,
+  ProgramKerja,
+  Footer,
+} from "@/components/layouts";
 
 export default function Home() {
   return (
@@ -13,7 +18,7 @@ export default function Home() {
         <LayoutPrestasi />
         <VisiMisi />
         <ProgramKerja />
-        <div className="flex flex-col"></div>
+        <Footer />
       </div>
     </main>
   );
