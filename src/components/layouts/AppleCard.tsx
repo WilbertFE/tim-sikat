@@ -52,7 +52,7 @@ const data = [
     category: "Misi 01 - Solidaritas",
     title: "Menjaga Solidaritas",
     src: "/img/solidaritas.png",
-    content: <DummyContent title={this?.title} />,
+    content: <DummyContent />,
   },
   {
     category: "Misi 02 - Integritas",
