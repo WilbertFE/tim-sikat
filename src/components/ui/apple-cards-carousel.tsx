@@ -15,6 +15,7 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import { CircleArrowRight } from "lucide-react";
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -256,6 +257,7 @@ export const Card = ({
           >
             {card.title}
           </motion.p>
+          <CircleArrowRight className="text-white text-lg mt-2" size={32} />
         </div>
         <BlurImage
           src={card.src}

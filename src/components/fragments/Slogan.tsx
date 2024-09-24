@@ -23,11 +23,11 @@ export default function Slogan() {
   return (
     <div className="flex flex-col items-center mt-0">
       <h1 className="font-bold text-3xl">
-        Visi{" "}
+        VISI{" "}
         <span className="tracking-wide bg-gradient-to-r from-teal-500 to-green-600 bg-clip-text text-transparent">
           SIKAT
         </span>{" "}
-        Itu
+        ITU
       </h1>
       <TypewriterEffect
         className="text-lg"
