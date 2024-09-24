@@ -36,6 +36,10 @@ const navbarContent = [
 
 const hamburgerContent = [
   {
+    title: "Home",
+    ref: "/",
+  },
+  {
     title: "Kenali Wilbert",
     ref: "/#wilbert",
   },
