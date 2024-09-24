@@ -3,7 +3,7 @@ import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 
 const words = [
   {
-    text: "Solidartias,",
+    text: "Solidaritas,",
   },
   {
     text: "Integritas,",

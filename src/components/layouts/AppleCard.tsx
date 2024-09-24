@@ -41,27 +41,27 @@ const penjelasanMisi = [
   {
     content:
       "Mempertahankan dan Mengembangkan Kontribusi Secara Setara dan Adil Dalam Lingkungan Sekolah",
-    src: "/img/solidaritas.png",
+    src: "/img/solidaritas-2.jpeg",
   },
   {
     content:
       "Menjadi Jembatan Komunikasi yang Transparan Antara Siswa dan Pihak Sekolah, Untuk Menyampaikan Kebutuhan dan Aspirasi Siswa",
-    src: "/img/integritas.png",
+    src: "/img/integritas-2.jpeg",
   },
   {
     content:
       "Mempertahankan dan Mengembangkan Ekstrakulikuler yang Diminati Ekskul Akademik Maupun Non-Akademik Melalui Berbagai Metode Seperti Menggencarkan Kompetisi dan Perlombaan",
-    src: "/img/kreatifitas.png",
+    src: "/img/kreatifitas-2.jpeg",
   },
   {
     content:
       "Ikut Andil Dalam Mengajak dan Memotivasi Siswa Untuk Menjadi Siswa yang Berakhlak Mulia Sesuai Dengan Nilai-Nilai Agama dan Moral",
-    src: "/img/akhlak.png",
+    src: "/img/akhlak-2.jpeg",
   },
   {
     content:
       "Mengintegrasikan Teknologi Untuk Menunjang Kreatifitas dan Mempersiapkan Untuk Tantangan Di Dunia yang Semakin Digital",
-    src: "/img/teknologi.png",
+    src: "/img/teknologi-2.jpeg",
   },
 ];
 
@@ -69,7 +69,7 @@ const data = [
   {
     category: "Misi 01 - Solidaritas",
     title: "Menjaga Solidaritas",
-    src: "/img/solidaritas.png",
+    src: "/img/solidaritas-2.jpeg",
     content: (
       <DummyContent
         content={penjelasanMisi[0].content}
@@ -80,7 +80,7 @@ const data = [
   {
     category: "Misi 02 - Integritas",
     title: "Menjaga Integritas",
-    src: "/img/integritas.png",
+    src: "/img/integritas-2.jpeg",
     content: (
       <DummyContent
         content={penjelasanMisi[1].content}
@@ -91,7 +91,7 @@ const data = [
   {
     category: "Misi 03 - Kreatifitas",
     title: "Meningkatkan Kreatifitas",
-    src: "/img/kreatifitas.png",
+    src: "/img/kreatifitas-2.jpeg",
     content: (
       <DummyContent
         content={penjelasanMisi[2].content}
@@ -103,7 +103,7 @@ const data = [
   {
     category: "Misi 04 - Akhlak",
     title: "Mengembangkan Akhlak Mulia",
-    src: "/img/akhlak.png",
+    src: "/img/akhlak-2.jpeg",
     content: (
       <DummyContent
         content={penjelasanMisi[3].content}
@@ -114,7 +114,7 @@ const data = [
   {
     category: "Misi 05 - Teknologi",
     title: "Mengintegrasikan Teknologi",
-    src: "/img/teknologi.png",
+    src: "/img/teknologi-2.jpeg",
     content: (
       <DummyContent
         content={penjelasanMisi[4].content}
