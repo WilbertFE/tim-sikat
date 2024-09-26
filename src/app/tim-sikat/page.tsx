@@ -54,7 +54,7 @@ export default function TimSikatPage() {
 
 const deskripsiAnggota = [
   {
-    content: `Seorang pelajar ambisius dan sangat akrab dengan teknologi`,
+    content: `Seorang pelajar ambisius dan sangat akrab dengan teknologi. Hobi nge-gym, lari, baca buku, public speaking, dll.`,
     src: "/img/gym.jpeg",
   },
   {

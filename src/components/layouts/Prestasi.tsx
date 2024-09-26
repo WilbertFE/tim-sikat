@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
-import { CircleChevronDown } from "lucide-react";
+import { CircleChevronDown, Quote } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
 import GambarWilbert from "/public/img/wilbert.png";
@@ -21,20 +21,20 @@ const paslonTiga = [
     pesan: "Mewujudkan Komunikasi yang Transparan Untuk Seluruh Siswa Methonam",
     prestasi: [
       "Pernah Meraih Penghargaan Akademik Juara 2 Umum Ketika Kelas 10 SMA",
-      "Salah satu anggota tim STEM top 10 se-sumut",
-      "Menjuarai Lomba Cerdas Cermat, Olimpiade Matematika, dan Olimpiade Bahasa Indonesia",
+      "Salah satu anggota tim STEM (Sains, Technology, Engineering, and Mathematics) top 10 se-sumut",
+      "Memiliki Pengalaman Bersaing Secara Profesional Dalam Bidang IT",
+      "Memiliki Lebih Dari Satu Tahun Pengalaman Dalam Bidang Komputer dan Programming",
       "Sekarang Menjabat Sebagai Ketua Ekskul Komputer (Mikroskil)",
-      "Memiliki Satu Tahun Pengalaman Dalam Bidang Komputer dan Programming",
     ],
     ref: "/tim-sikat",
   },
   {
     nama: "Jacob Martua Haganta Simorangkir",
     jabatan: "Calon Wakil Ketua Osis",
-    pesan: "Mewujudkan Komunikasi yang Transparan Untuk Seluruh Siswa Methonam",
+    pesan: "Menjadikan OSIS Sebagai Tempat Untuk Aspirasi Siswa",
     prestasi: [
       "Pernah Meraih Penghargaan Akademik Juara 1 Umum Ketika Kelas 10 SMA",
-      "Salah satu anggota tim STEM top 10 se-sumut",
+      "Salah satu anggota tim STEM (Sains, Technology, Engineering, and Mathematics) top 10 se-sumut",
       "Memperoleh Posisi 1 dalam TOBK GO se Deli Serdang",
       "Memperoleh Juara 1 dalam OSN-K Deli Serdang",
       "Memperoleh medali Perak dalam POSI",
@@ -74,9 +74,11 @@ export default function LayoutPrestasi() {
                 className="-mt-32"
               />
             </CardContent>
-            <CardFooter className="absolute bottom-0 flex z-20 flex-col">
-              <blockquote className="text-center text-white font-medium tracking-wide">
-                &quot;{paslon.pesan}&quot;
+            <CardFooter className="absolute bottom-0 flex z-20 flex-col px-2">
+              <blockquote className="text-center relative text-white font-medium tracking-wide">
+                <Quote className="absolute -top-5" />
+                {paslon.pesan}
+                <Quote className="absolute right-0 bottom-0" />
               </blockquote>
               <CircleChevronDown
                 color="#ffffff"
