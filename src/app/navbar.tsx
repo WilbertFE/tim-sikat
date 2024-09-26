@@ -60,7 +60,7 @@ const hamburgerContent = [
     ref: "/#footer",
   },
   {
-    title: "Tim Korupsi",
+    title: "Tim Anti-Korupsi",
     ref: "/awasi-sikat",
   },
   {
