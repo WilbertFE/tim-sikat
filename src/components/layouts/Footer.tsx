@@ -23,6 +23,10 @@ const sosialMedia = [
 
 const hamburgerContent = [
   {
+    title: "Home",
+    ref: "/",
+  },
+  {
     title: "Kenali Wilbert",
     ref: "/#wilbert",
   },
@@ -39,12 +43,16 @@ const hamburgerContent = [
     ref: "/#program-unggulan",
   },
   {
-    title: "TIM SIKAT",
-    ref: "/tim-sikat",
-  },
-  {
     title: "Dukung SIKAT",
     ref: "/#footer",
+  },
+  {
+    title: "Tim Anti-Korupsi",
+    ref: "/awasi-sikat",
+  },
+  {
+    title: "TIM SIKAT",
+    ref: "/tim-sikat",
   },
 ];
 
