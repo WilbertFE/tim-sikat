@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function page() {
+export default function DefaultPage() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center px-4 text-center text-xl">
       Bagian Ini Belum Selesai, Sabar ya.. Tetap dukung <strong>03</strong> ya

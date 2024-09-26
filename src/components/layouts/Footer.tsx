@@ -43,16 +43,16 @@ const hamburgerContent = [
     ref: "/#program-unggulan",
   },
   {
-    title: "Dukung SIKAT",
-    ref: "/#footer",
+    title: "TIM SIKAT",
+    ref: "/tim-sikat",
   },
   {
     title: "Tim Anti-Korupsi",
     ref: "/awasi-sikat",
   },
   {
-    title: "TIM SIKAT",
-    ref: "/tim-sikat",
+    title: "Dukung SIKAT",
+    ref: "/#footer",
   },
 ];
 

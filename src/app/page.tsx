@@ -2,12 +2,7 @@
 
 import { HeroImage } from "@/components/core";
 import { Slogan } from "@/components/fragments";
-import {
-  LayoutPrestasi,
-  VisiMisi,
-  ProgramKerja,
-  Footer,
-} from "@/components/layouts";
+import { LayoutPrestasi, VisiMisi, ProgramKerja } from "@/components/layouts";
 
 export default function Home() {
   return (
@@ -18,7 +13,6 @@ export default function Home() {
         <LayoutPrestasi />
         <VisiMisi />
         <ProgramKerja />
-        <Footer />
       </div>
     </main>
   );
