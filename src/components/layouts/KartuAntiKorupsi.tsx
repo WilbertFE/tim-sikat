@@ -163,7 +163,7 @@ const data = [
   },
   {
     category: "Anggota",
-    title: "Nesya Uli",
+    title: "Nesya Gultom",
     src: "/img/nesya.jpeg",
     content: (
       <DummyContent

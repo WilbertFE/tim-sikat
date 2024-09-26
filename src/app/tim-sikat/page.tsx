@@ -2,7 +2,6 @@ import KartuAntiKorupsi from "@/components/layouts/KartuAntiKorupsi";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -80,7 +79,6 @@ export default function page() {
           Akun Instagram
         </h1>
         <Table>
-          <TableCaption>A list of your recent invoices.</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead className="w-[100px]">Nama</TableHead>
