@@ -44,7 +44,7 @@ const penjelasanMisi = [
   },
   {
     content: "Pelajar yang bertanggugjawab dan mudah beradaptasi",
-    src: "/img/integritas-2.jpeg",
+    src: "/img/jacob-2.jpeg",
   },
   {
     content: "Seorang yang berenergi, extrovert",
@@ -95,7 +95,7 @@ const data = [
   {
     category: "Wakil Ketua",
     title: "Jacob Simorangkir",
-    src: "/img/gym.jpeg",
+    src: "/img/jacob-2.jpeg",
     content: (
       <DummyContent
         content={penjelasanMisi[1].content}

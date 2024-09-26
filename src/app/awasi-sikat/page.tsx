@@ -10,6 +10,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -21,6 +22,13 @@ export default function page() {
             SIKAT
           </span>
         </h1>
+        <Image
+          src="/img/logo.png"
+          alt="logo"
+          width={128}
+          height={128}
+          className="mx-auto mt-2"
+        />
         <KartuAntiKorupsi />
       </div>
       <div className="w-full flex justify-center flex-col pt-24">
