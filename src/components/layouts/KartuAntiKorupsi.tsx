@@ -39,7 +39,7 @@ const DummyContent = ({ content, src }: { content: string; src: string }) => {
 
 const penjelasanMisi = [
   {
-    content: "Seorang pelajar ambisius dan sangat akrab dengan teknologi",
+    content: `Seorang pelajar ambisius dan sangat akrab dengan teknologi`,
     src: "/img/gym.jpeg",
   },
   {
@@ -47,8 +47,8 @@ const penjelasanMisi = [
     src: "/img/jacob-2.jpeg",
   },
   {
-    content: "Seorang yang berenergi, extrovert",
-    src: "/img/kreatifitas-2.jpeg",
+    content: "Pemuda paling baik, cerdas, dan kreatif",
+    src: "/img/hasian.jpeg",
   },
   {
     content: "",
@@ -56,7 +56,7 @@ const penjelasanMisi = [
   },
   {
     content: "",
-    src: "/img/teknologi-2.jpeg",
+    src: "/img/oliv.jpeg",
   },
   {
     content: "",
@@ -75,8 +75,8 @@ const penjelasanMisi = [
     src: "/img/teknologi-2.jpeg",
   },
   {
-    content: "",
-    src: "/img/teknologi-2.jpeg",
+    content: "little girl who loves music",
+    src: "/img/kezia-2.jpeg",
   },
 ];
 
@@ -104,9 +104,9 @@ const data = [
     ),
   },
   {
-    category: "Koordinator",
+    category: "Anggota",
     title: "Hasian Tambunan",
-    src: "/img/kreatifitas-2.jpeg",
+    src: "/img/hasian.jpeg",
     content: (
       <DummyContent
         content={penjelasanMisi[2].content}
@@ -116,7 +116,7 @@ const data = [
   },
 
   {
-    category: "Wakil Koordinator",
+    category: "Anggota",
     title: "Anggi Tambunan",
     src: "/img/akhlak-2.jpeg",
     content: (
@@ -127,7 +127,7 @@ const data = [
     ),
   },
   {
-    category: "Kameramen",
+    category: "Anggota",
     title: "David Bonaventura",
     src: "/img/teknologi-2.jpeg",
     content: (
@@ -138,7 +138,7 @@ const data = [
     ),
   },
   {
-    category: "Bendahara",
+    category: "Anggota",
     title: "Olivia Sitanggang",
     src: "/img/oliv.jpeg",
     content: (
@@ -149,7 +149,7 @@ const data = [
     ),
   },
   {
-    category: "Sekertaris",
+    category: "Anggota",
     title: "Tia Sitompul",
     src: "/img/teknologi-2.jpeg",
     content: (
@@ -160,7 +160,7 @@ const data = [
     ),
   },
   {
-    category: "Wakil Sekertaris",
+    category: "Anggota",
     title: "Nesya Uli",
     src: "/img/teknologi-2.jpeg",
     content: (
@@ -171,7 +171,7 @@ const data = [
     ),
   },
   {
-    category: "Bela Negara",
+    category: "Anggota",
     title: "Andre Panjaitan",
     src: "/img/teknologi-2.jpeg",
     content: (
@@ -182,13 +182,13 @@ const data = [
     ),
   },
   {
-    category: "Koordinator",
+    category: "Anggota",
     title: "Kezia",
-    src: "/img/teknologi-2.jpeg",
+    src: "/img/kezia-2.jpeg",
     content: (
       <DummyContent
-        content={penjelasanMisi[4].content}
-        src={penjelasanMisi[4].src}
+        content={penjelasanMisi[9].content}
+        src={penjelasanMisi[9].src}
       />
     ),
   },
